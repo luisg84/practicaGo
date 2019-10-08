@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <body>
+        <div id="formulario">
+
+            <form action="enviar.php" method="post" id="formdata">
+
+                <label for="nombre">Nombre: </label><input onchange="cambio(this)" type="text" name="nombre" id="nombre" required placeholder="Inserte nombre"></br>
+                <label for="apellidos">Apellidos: </label><input onchange="cambio(this)" type="text" name="apellidos" id="apellidos" required></br>
+                <label for="direccion">Dirección: </label><input onchange="cambio(this)" type="text" name="direccion" id="direccion" required></br>
+                Género: <input onchange="cambio(this)" type="radio" name="genero" id="hombre" checked="checked"><label for="hombre"> Hombre - </label><input onchange="cambio(this)" type="radio" name="genero" id="mujer"><label for="mujer"> Mujer</label>
+                <label for="mayor">Es mayor de 18 años: </label><input onchange="check(this)" type="checkbox" name="mayor" id="mayor" required>
+                <input type="button" value="Enviar" id="hyt">
+                <!-- <button id="botonenviar" >Boton</button> -->
+            </form>
+        </div>
+
+        <div id="exito" style="display:none">
+            Sus datos han sido recibidos con éxito.
+        </div>
+
+        <div id="fracaso" style="display:none">
+            Se ha producido un error durante el envío de datos.
+        </div>
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
